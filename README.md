@@ -1,4 +1,4 @@
-#  Alicação Taiga em Docker.
+#  Aplicação Taiga em Docker.
 
 Este repositório contém o serviço de open source,chamado taiga criado em [ Docker ](https://www.docker.com/).
 
