@@ -12,7 +12,7 @@ docker-compose up -d subir a stack do compose,após isso:
 ./start-taiga.sh
 executar o script para a criação de superusuário.
 
-## Variváveis de Ambiente do Compose
+## Variáveis de Ambiente do Compose
 
 Ao alterar as variáveis,modificar elas em seus determinados campos dos serviços na stack.
 
