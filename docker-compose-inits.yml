@@ -1,0 +1,31 @@
+version: "3.5"
+
+x-environment:
+  &default-back-environment
+  POSTGRES_DB: taiga
+  POSTGRES_USER: taiga
+  POSTGRES_PASSWORD: 746634a@yn
+  POSTGRES_HOST: taiga-db
+  TAIGA_SECRET_KEY: "taiga-back-secret-key"
+  # As configurações de RABBITMQ tem de ser igual as configurações do serviço taiga-rabbitmq e taiga-events. / setando o objeto de variavéis de ambiente.
+  RABBITMQ_USER: taiga
+  RABBITMQ_PASS: 746634a@yn
+  CELERY_ENABLED: "False"
+
+x-volumes:
+  &default-back-volumes
+  - taiga-static-data:/taiga-back/static
+  - taiga-media-data:/taiga-back/media
+  # Setando o objeto default-back-volumes para passar os dois volumes > static e media.
+
+services:
+  taiga-manage:
+    image: taigaio/taiga-back:latest
+    environment: *default-back-environment
+    depends_on:
+      - taiga-db
+    entrypoint: "python manage.py"
+    volumes: *default-back-volumes
+    networks:
+      - taiga
+    # startando o arquivo "manage.py que está dentro do container! obs: depende do serviço (taiga-db) para subir corretamente (depends_on)!"
