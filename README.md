@@ -1,6 +1,6 @@
 #  Alicação Taiga em Docker.
 
-Este repositório contém o serviço de open source,chamado taiga criado o [ Docker ](https://www.docker.com/).
+Este repositório contém o serviço de open source,chamado taiga criado em [ Docker ](https://www.docker.com/).
 
 ##  Informações e dúvidas sobre o projeto oficial
 
