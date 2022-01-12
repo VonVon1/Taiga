@@ -20,7 +20,7 @@ Ao alterar as variáveis,modificar elas em seus determinados campos dos serviço
 
 gateway:nginx , banco:postgresql , mensagens:RABBITMQ , back e front: Java e python.
 
-## Informações de como implementar no seu dominío no arquivo:
+## Informações de como implementar no seu domínio no arquivo:
 
 production.txt
 
