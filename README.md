@@ -14,7 +14,7 @@ executar o script para a criação de superusuário.
 
 ## Variváveis de Ambiente do Compose
 
-Ao alterar as variáveis lembrando que elas devem ser as mesmas em todos os serviços do stack.
+Ao alterar as variáveis,modificar elas em seus determinados campos dos serviços na stack.
 
 ## Conteiners 
 
@@ -23,3 +23,4 @@ gateway:nginx , banco:postgresql , mensagens:RABBITMQ , back e front: Java e pyt
 ## Informações de como implementar no seu dominío no arquivo:
 
 production.txt
+
