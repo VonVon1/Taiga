@@ -21,7 +21,7 @@ Ao alterar as variáveis,modificar elas em seus determinados campos dos serviço
 gateway:nginx , banco:postgresql , mensagens:RABBITMQ , back e front: Java e python.
 OBS: importante trocar as informações do domínio do taiga para o IP do servidor que irá usar.
 
-## Informações de como implementar no seu domínio e checkar se a aplicação está saúdavel:
+## Verificando se o stack está saúdavel:
 
 Após a execução da stack - docker container ls ou docker ps para ver se está tudo em pé,se sim acesse a aplicação
 pelo endereço http://meudomínio.com:9000 e logue com o superusuário para configurar o resto das particularidades.
