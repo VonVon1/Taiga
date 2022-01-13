@@ -55,3 +55,37 @@ TAIGA_URL: "https://taiga.mycompany.com"
 TAIGA_WEBSOCKETS_URL: "wss://taiga.mycompany.com"
 TAIGA_SUBPATH: "/"
 ```
+**Serviço: taiga-events**
+```
+TAIGA_SECRET_KEY: taiga-back-secret-key
+```
+**Serviço: taiga-protected**
+```
+SECRET_KEY: "taiga-back-secret-key"
+```
+###  Configurações do RABBITMQ
+
+Essas variáveis são usadas para deixar mensagens nos serviços rabbitmq. Essas variáveis devem ser as mesmas que em `taiga-back` , `taiga-async` , `taiga-events` , `taiga-async-rabbitmq` e `taiga-events-rabbitmq` 
+
+**Serviço: taiga-back**
+```
+RABBITMQ_USER: taiga
+RABBITMQ_PASS: taiga
+```
+**Serviço: taiga-async-rabbitmq**
+```
+RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie
+RABBITMQ_DEFAULT_USER: taiga
+RABBITMQ_DEFAULT_PASS: taiga
+RABBITMQ_DEFAULT_VHOST: taiga
+```
+
+**Serviço: taiga-events-rabbitmq**
+```
+RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie
+RABBITMQ_DEFAULT_USER: taiga
+RABBITMQ_DEFAULT_PASS: taiga
+RABBITMQ_DEFAULT_VHOST: taiga
+```
+
+
