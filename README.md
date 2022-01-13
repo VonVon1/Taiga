@@ -24,7 +24,7 @@ OBS: importante trocar as informações do domínio do taiga para o IP do servid
 ## Informações de como implementar no seu domínio e checkar se a aplicação está saúdavel:
 
 Após a execução da stack - docker container ls ou docker ps para ver se está tudo em pé,se sim acesse a aplicação
-pelo endereço http://SEU-DOMÍNIO:9000 e logue com o superusuário para configurar o resto das particularidades.
+pelo endereço http://meudomínio.com:9000 e logue com o superusuário para configurar o resto das particularidades.
 
 ## Possíveis causas se um ou mais container da stack não subir:
 
