@@ -29,3 +29,29 @@ pelo endereço http://SEU-DOMÍNIO:9000 e logue com o superusuário para configu
 ## Possíveis causas se um ou mais container da stack não subir:
 
 Endereço do domínio:TAIGA_SITES_DOMAIN:"seu-domínio:9000"(,versão da imagem(docker image ls),comandos da stack do compose na ordem errada,se vc estiver utilizando o Docker Desktop em Windows pode ser que a stack não suba por conta de particularidades do Docker Desktop.Após entender algumas das possíveis causas do problema entrar em cada container através do docker exec -ti (nome-da-imagem) bash e ver se cada container está saúdavel e funcionando normalmente.Vale ressaltar que se você mudar uma ou mais variáveis do compose elas deverão ser mudadas em cada serviço da stack por exemplo o usuário do POSTGRES_USER: Maria essa variável deverá ser a mesma em cada serviço que utilize ela,toda a stack está umsando a network: taiga,se mudar o nome da network deverá também ser mudada em cada serviço para o acesso corretamente com a rede do Docker,atenção a ordem das dependências do container pois alguns dependem de outros para subir como por exemplo o taiga-back: depends_on : taiga-db , taiga-events-rabbitmq , taiga-async-rabbitmq.
+
+## Configurações
+
+**Serviço: taiga-db**
+```
+POSTGRES_DB: taiga
+POSTGRES_USER: taiga
+POSTGRES_PASSWORD: 746634a@yn
+```
+OBS: deverá ser o mesmo no serviço: taiga-back e pode ser configurado em taiga-back.
+Porta: 5432
+
+A configuração padrão assume que o Taiga está sendo servido em um **subdomínio** :
+```
+TAIGA_SECRET_KEY: "taiga-back-secret-key"
+TAIGA_SITES_SCHEME: "http"
+TAIGA_SITES_DOMAIN: "meudomínio.com:9000"
+TAIGA_SUBPATH: ""
+```
+**Serviço: taiga-front**
+
+```
+TAIGA_URL: "https://taiga.mycompany.com"
+TAIGA_WEBSOCKETS_URL: "wss://taiga.mycompany.com"
+TAIGA_SUBPATH: "/"
+```
