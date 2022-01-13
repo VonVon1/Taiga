@@ -51,8 +51,8 @@ TAIGA_SUBPATH: ""
 **Serviço: taiga-front**
 
 ```
-TAIGA_URL: "https://taiga.mycompany.com"
-TAIGA_WEBSOCKETS_URL: "wss://taiga.mycompany.com"
+TAIGA_URL: "http://meudomínio.com"
+TAIGA_WEBSOCKETS_URL: "ws://meudomínio.com"
 TAIGA_SUBPATH: "/"
 ```
 **Serviço: taiga-events**
@@ -70,13 +70,13 @@ Essas variáveis são usadas para deixar mensagens nos serviços rabbitmq. Essas
 **Serviço: taiga-back**
 ```
 RABBITMQ_USER: taiga
-RABBITMQ_PASS: taiga
+RABBITMQ_PASS: 746634a@yn
 ```
 **Serviço: taiga-async-rabbitmq**
 ```
 RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie
 RABBITMQ_DEFAULT_USER: taiga
-RABBITMQ_DEFAULT_PASS: taiga
+RABBITMQ_DEFAULT_PASS: 746634a@yn
 RABBITMQ_DEFAULT_VHOST: taiga
 ```
 
@@ -84,7 +84,7 @@ RABBITMQ_DEFAULT_VHOST: taiga
 ```
 RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie
 RABBITMQ_DEFAULT_USER: taiga
-RABBITMQ_DEFAULT_PASS: taiga
+RABBITMQ_DEFAULT_PASS: 746634a@yn
 RABBITMQ_DEFAULT_VHOST: taiga
 ```
 
