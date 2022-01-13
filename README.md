@@ -34,9 +34,9 @@ Endereço do domínio:TAIGA_SITES_DOMAIN:"seu-domínio:9000"(,versão da imagem(
 
 **Serviço: taiga-db**
 ```
-POSTGRES_DB: taiga
-POSTGRES_USER: taiga
-POSTGRES_PASSWORD: 746634a@yn
+POSTGRES_DB: (SEU BANCO)
+POSTGRES_USER: (SEU USUARIO)
+POSTGRES_PASSWORD: (SUA SENHA)
 ```
 OBS: deverá ser o mesmo no serviço: taiga-back e pode ser configurado em taiga-back.
 Porta: 5432
@@ -69,22 +69,22 @@ Essas variáveis são usadas para deixar mensagens nos serviços rabbitmq. Essas
 
 **Serviço: taiga-back**
 ```
-RABBITMQ_USER: taiga
-RABBITMQ_PASS: 746634a@yn
+RABBITMQ_USER: (SEU USUARIO)
+RABBITMQ_PASS: (SUA SENHA)
 ```
 **Serviço: taiga-async-rabbitmq**
 ```
 RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie
-RABBITMQ_DEFAULT_USER: taiga
-RABBITMQ_DEFAULT_PASS: 746634a@yn
+RABBITMQ_DEFAULT_USER: (SEU USUARIO)
+RABBITMQ_DEFAULT_PASS: (SUA SENHA)
 RABBITMQ_DEFAULT_VHOST: taiga
 ```
 
 **Serviço: taiga-events-rabbitmq**
 ```
 RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie
-RABBITMQ_DEFAULT_USER: taiga
-RABBITMQ_DEFAULT_PASS: 746634a@yn
+RABBITMQ_DEFAULT_USER: (SEU USUARIO)
+RABBITMQ_DEFAULT_PASS: (SUA SENHA)
 RABBITMQ_DEFAULT_VHOST: taiga
 ```
 
