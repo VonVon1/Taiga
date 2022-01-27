@@ -11,6 +11,7 @@ http://taiga.io/
 docker-compose up -d subir a stack do compose,após isso:
 ./start-taiga.sh
 executar o script para a criação de superusuário.
+feito isso para acessar o serviço basta digitar o http://meudominio.com:9000.
 
 ## Variáveis de Ambiente do Compose
 
